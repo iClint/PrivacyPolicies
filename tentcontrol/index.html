@@ -4,126 +4,107 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TentControl — Privacy Policy</title>
+<meta name="description" content="Privacy policy for TentControl — an independent iOS client for grow-tent controllers, with no servers of its own.">
+<link rel="icon" href="../assets/tentcontrol.png">
+<link rel="stylesheet" href="../assets/style.css">
 <style>
-	:root {
-		color-scheme: light dark;
-		--fg: #111113;
-		--bg: #ffffff;
-		--muted: #4a4a4f;          /* darker than before → AA contrast on white */
-		--link: #157334;
-		--lead-bg: #effaf1;
-		--lead-border: #9ad8ab;
-		--row-border: #d4d4da;
-		--th-bg: #eef0f2;
-	}
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--fg: #f1f1f5;
-			--bg: #0d120f;
-			--muted: #b8b8c0;      /* lighter → AA contrast on the dark bg */
-			--link: #5ee68f;
-			--lead-bg: #13241b;
-			--lead-border: #2c5440;
-			--row-border: #2c3832;
-			--th-bg: #16241c;
-		}
-	}
-	body {
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-		line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
-		color: var(--fg); background: var(--bg);
-	}
-	h1 { font-size: 1.9rem; margin-bottom: .25rem; }
-	h2 { font-size: 1.25rem; margin-top: 2.25rem; }
-	.updated { color: var(--muted); font-size: .9rem; margin-top: 0; }
-	a { color: var(--link); }
-	.lead {
-		background: var(--lead-bg); border: 1px solid var(--lead-border); border-radius: 12px;
-		padding: 1rem 1.1rem; margin: 1.5rem 0; color: var(--fg);
-	}
-	table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
-	td, th { border: 1px solid var(--row-border); padding: .6rem .7rem; text-align: left; vertical-align: top; }
-	th { background: var(--th-bg); }
-	ul { padding-left: 1.2rem; }
-	code { font-size: .9em; }
-	footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+	/* Cyan accent, matching the connectivity badge on the app icon. */
+	body { --badge: #4bc3f2; }
 </style>
 </head>
 <body>
 
-<h1>TentControl — Privacy Policy</h1>
-<p class="updated">Last updated: 15 June 2026</p>
+<header class="hero">
+	<div class="hero-inner">
+		<img class="app-icon" src="../assets/tentcontrol.png" alt="TentControl app icon" width="84" height="84">
+		<h1>TentControl Privacy Policy</h1>
+		<p class="tagline">Last updated: 15 June 2026</p>
+	</div>
+</header>
 
-<p>TentControl is an independent iOS app for monitoring and controlling your own
-grow-tent environmental controller. This policy explains exactly what the app
-does and does not do with your information.</p>
+<main class="wrap prose">
 
-<p class="lead"><strong>In one sentence:</strong> TentControl has no servers of its
-own, runs no analytics, shows no ads, and keeps your credentials on your device —
-the only data it transmits is what's needed to sign in to and operate your own
-equipment.</p>
+	<p class="intro">TentControl is an independent iOS app for monitoring and controlling your own
+	grow-tent environmental controller. This policy explains exactly what the app
+	does and does not do with your information.</p>
 
-<h2>Who we are</h2>
-<p>TentControl is built and maintained by an individual developer ("we", "us").
-The app is not affiliated with, endorsed by, or operated by the manufacturer of
-your controller hardware.</p>
+	<div class="lead">
+		<p><strong>In one sentence:</strong> TentControl has no servers of its
+		own, runs no analytics, shows no ads, and keeps your credentials on your device —
+		the only data it transmits is what's needed to sign in to and operate your own
+		equipment.</p>
+	</div>
 
-<h2>What the app collects, and why</h2>
-<table>
-	<tr><th>Data</th><th>Purpose</th><th>Where it goes</th></tr>
-	<tr><td><strong>Account email</strong></td><td>Identifies your controller account at sign-in</td><td>Stored locally on your device only</td></tr>
-	<tr><td><strong>Account password</strong></td><td>Used once, at sign-in, to authenticate with the controller platform</td><td>Sent over HTTPS to the controller platform to obtain an access token; <strong>never stored</strong> by the app</td></tr>
-	<tr><td><strong>Access token / device identifiers</strong> (e.g. device serial)</td><td>Keeps you signed in and addresses your specific equipment</td><td>Stored locally on your device (the secret token is held in the iOS Keychain)</td></tr>
-	<tr><td><strong>Live equipment data</strong> (temperature, humidity, VPD, fan/light state, etc.)</td><td>Displayed to you in the app</td><td>Fetched live from the controller platform; not retained or sent anywhere by us</td></tr>
-	<tr><td><strong>App preferences</strong> (units, theme, refresh interval, lock settings)</td><td>Remember your settings</td><td>Stored locally on your device</td></tr>
-</table>
-<p>We collect this <strong>solely to provide the app's functionality.</strong> We do
-not use any of it for tracking, advertising, profiling, or analytics.</p>
+	<h2>Who we are</h2>
+	<p>TentControl is built and maintained by an individual developer ("we", "us").
+	The app is not affiliated with, endorsed by, or operated by the manufacturer of
+	your controller hardware.</p>
 
-<h2>What we do NOT do</h2>
-<ul>
-	<li>We do <strong>not</strong> operate any backend server that receives your data.</li>
-	<li>We do <strong>not</strong> collect analytics or telemetry about you or your usage.</li>
-	<li>We do <strong>not</strong> include advertising or third-party tracking SDKs.</li>
-	<li>We do <strong>not</strong> sell, rent, or share your information with anyone.</li>
-</ul>
+	<h2>What the app collects, and why</h2>
+	<div class="table-wrap">
+		<table>
+			<tr><th>Data</th><th>Purpose</th><th>Where it goes</th></tr>
+			<tr><td><strong>Account email</strong></td><td>Identifies your controller account at sign-in</td><td>Stored locally on your device only</td></tr>
+			<tr><td><strong>Account password</strong></td><td>Used once, at sign-in, to authenticate with the controller platform</td><td>Sent over HTTPS to the controller platform to obtain an access token; <strong>never stored</strong> by the app</td></tr>
+			<tr><td><strong>Access token / device identifiers</strong> (e.g. device serial)</td><td>Keeps you signed in and addresses your specific equipment</td><td>Stored locally on your device (the secret token is held in the iOS Keychain)</td></tr>
+			<tr><td><strong>Live equipment data</strong> (temperature, humidity, VPD, fan/light state, etc.)</td><td>Displayed to you in the app</td><td>Fetched live from the controller platform; not retained or sent anywhere by us</td></tr>
+			<tr><td><strong>App preferences</strong> (units, theme, refresh interval, lock settings)</td><td>Remember your settings</td><td>Stored locally on your device</td></tr>
+		</table>
+	</div>
+	<p>We collect this <strong>solely to provide the app's functionality.</strong> We do
+	not use any of it for tracking, advertising, profiling, or analytics.</p>
 
-<h2>Where your data is sent</h2>
-<p>To work, the app communicates over encrypted HTTPS/TLS with the <strong>cloud
-service of your controller platform</strong> (the same service the official
-manufacturer app uses) to authenticate and to read/command your equipment. That
-communication is governed by <strong>that provider's own privacy policy</strong>.</p>
+	<h2>What we do NOT do</h2>
+	<ul>
+		<li>We do <strong>not</strong> operate any backend server that receives your data.</li>
+		<li>We do <strong>not</strong> collect analytics or telemetry about you or your usage.</li>
+		<li>We do <strong>not</strong> include advertising or third-party tracking SDKs.</li>
+		<li>We do <strong>not</strong> sell, rent, or share your information with anyone.</li>
+	</ul>
 
-<h2>Local storage and security</h2>
-<ul>
-	<li>Your account secret (access token) is stored in the <strong>iOS Keychain</strong>.</li>
-	<li>Your email, equipment identifiers, and preferences are stored in the app's local settings on the device.</li>
-	<li>Nothing is stored off-device by us.</li>
-</ul>
+	<h2>Where your data is sent</h2>
+	<p>To work, the app communicates over encrypted HTTPS/TLS with the <strong>cloud
+	service of your controller platform</strong> (the same service the official
+	manufacturer app uses) to authenticate and to read/command your equipment. That
+	communication is governed by <strong>that provider's own privacy policy</strong>.</p>
 
-<h2>Demo Mode</h2>
-<p>The app includes a Demo Mode that runs against simulated data with no network
-connection and no real credentials. No personal data is collected or transmitted
-in Demo Mode.</p>
+	<h2>Local storage and security</h2>
+	<ul>
+		<li>Your account secret (access token) is stored in the <strong>iOS Keychain</strong>.</li>
+		<li>Your email, equipment identifiers, and preferences are stored in the app's local settings on the device.</li>
+		<li>Nothing is stored off-device by us.</li>
+	</ul>
 
-<h2>Deleting your data</h2>
-<ul>
-	<li><strong>In the app:</strong> "Sign out" (Settings &rarr; Account) removes your stored credentials and token from the device.</li>
-	<li><strong>Your platform account:</strong> TentControl cannot create or delete accounts on the controller platform. To delete your controller-platform account itself, use the manufacturer's official app or website.</li>
-</ul>
+	<h2>Demo Mode</h2>
+	<p>The app includes a Demo Mode that runs against simulated data with no network
+	connection and no real credentials. No personal data is collected or transmitted
+	in Demo Mode.</p>
 
-<h2>Children</h2>
-<p>TentControl is a tool for operating physical equipment and is not directed at
-children under 13.</p>
+	<h2>Deleting your data</h2>
+	<ul>
+		<li><strong>In the app:</strong> "Sign out" (Settings &rarr; Account) removes your stored credentials and token from the device.</li>
+		<li><strong>Your platform account:</strong> TentControl cannot create or delete accounts on the controller platform. To delete your controller-platform account itself, use the manufacturer's official app or website.</li>
+	</ul>
 
-<h2>Changes to this policy</h2>
-<p>We may update this policy as the app evolves. Material changes will be reflected
-by the "Last updated" date above.</p>
+	<h2>Children</h2>
+	<p>TentControl is a tool for operating physical equipment and is not directed at
+	children under 13.</p>
 
-<h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:clintkingston@gmail.com">clintkingston@gmail.com</a></p>
+	<h2>Changes to this policy</h2>
+	<p>We may update this policy as the app evolves. Material changes will be reflected
+	by the "Last updated" date above.</p>
 
-<footer>TentControl is an independent project and is not affiliated with any controller-hardware manufacturer.</footer>
+	<h2>Contact</h2>
+	<p>Questions about this policy: <a href="mailto:clintkingston@gmail.com">clintkingston@gmail.com</a></p>
+
+	<a class="backlink" href="../">← All privacy policies</a>
+
+	<footer>
+		<p>TentControl is an independent project and is not affiliated with any controller-hardware manufacturer.</p>
+		<p><a href="https://iclint.github.io/AppSupport/tentcontrol/">Support</a></p>
+	</footer>
+
+</main>
 
 </body>
 </html>
